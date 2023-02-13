@@ -42,7 +42,7 @@ class Mod {
 				if (itemCount > 0) {
 					for (let i = 0; i < itemCount; i++) {
 						const chosenRewardItemTpl = inventoryController.weightedRandomHelper.getWeightedInventoryItem(rewardContainerDetails.rewardTplPool.loot[itemCategory]);
-						const existingItemInRequest = newItemRequest.items.find(x => x.item_id == chosenRewardItemTpl);
+						const existingItemInRequest = newItemRequest.items.find(x => x.item_id === chosenRewardItemTpl);
 						
 						if (existingItemInRequest) {
 							// Exists in request already, increment count
@@ -65,7 +65,7 @@ class Mod {
 		} else {
 			for (let index = 0; index < rewardContainerDetails.rewardCount; index++) {
 				const chosenRewardItemTpl = inventoryController.weightedRandomHelper.getWeightedInventoryItem(rewardContainerDetails.rewardTplPool);
-				const existingItemInRequest = newItemRequest.items.find(x => x.item_id == chosenRewardItemTpl);
+				const existingItemInRequest = newItemRequest.items.find(x => x.item_id === chosenRewardItemTpl);
 				
 				if (existingItemInRequest) {
 					// Exists in request already, increment count
