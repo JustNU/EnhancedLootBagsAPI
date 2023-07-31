@@ -1,8 +1,8 @@
 {
     "name": "Enhanced Loot Bags API",
     "author": "JustNU",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "Unlicense",
     "main": "src/mod.js",
-	"akiVersion": "3.5.*"
+	"akiVersion": "3.6.*"
 }
