@@ -18,6 +18,7 @@ class Mod {
 	
 	static customOpenRandomLootContainer(pmcData, body, sessionID) {
 		const logger = Mod.container.resolve("WinstonLogger");
+		//original class
 		const invCon = Mod.container.resolve("InventoryController");
 		const randomUtil = Mod.container.resolve("RandomUtil");
 		const weightRanHelp = Mod.container.resolve("WeightedRandomHelper");
